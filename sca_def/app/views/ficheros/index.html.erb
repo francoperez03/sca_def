@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Administrador de Ficheros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Casado</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ficheros.each do |fichero| %>
+      <tr>
+        <td><%= fichero.Nombre %></td>
+        <td><%= fichero.Edad %></td>
+        <td><%= fichero.Casado %></td>
+        <td><%= fichero.Fecha %></td>
+        <td><%= fichero.Hora %></td>
+        <td><%= link_to 'Mostrar', fichero %></td>
+        <td><%= link_to 'Editar', edit_fichero_path(fichero) %></td>
+        <td><%= link_to 'Borrar', fichero, method: :delete, data: { confirm: '¿Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Fichero', new_fichero_path %>

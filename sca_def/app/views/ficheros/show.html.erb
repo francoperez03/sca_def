@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @fichero.Nombre %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @fichero.Edad %>
+</p>
+
+<p>
+  <strong>Casado:</strong>
+  <%= @fichero.Casado %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @fichero.Fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @fichero.Hora %>
+</p>
+
+<%= link_to 'Edit', edit_fichero_path(@fichero) %> |
+<%= link_to 'Back', ficheros_path %>

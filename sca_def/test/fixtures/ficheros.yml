@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Nombre: MyString
+  Edad: 1
+  Casado: false
+  Fecha: 2016-02-19
+  Hora: 2016-02-19 11:21:03
+
+two:
+  Nombre: MyString
+  Edad: 1
+  Casado: false
+  Fecha: 2016-02-19
+  Hora: 2016-02-19 11:21:03
